@@ -1,0 +1,19 @@
+{
+  "name": "mission_04",
+  "version": "1.0.0",
+  "description": "mission 04 using scss",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/titre.scss:./css/style.css --style expanded"
+  },
+  "author": "Elena",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elenixu/Mission_04.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elenixu/Mission_04/issues"
+  },
+  "homepage": "https://github.com/elenixu/Mission_04#readme"
+}
