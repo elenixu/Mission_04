@@ -4,7 +4,7 @@
   "description": "mission 04 using scss",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/titre.scss:./css/style.css --style expanded"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded"
   },
   "author": "Elena",
   "license": "ISC",

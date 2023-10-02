@@ -1,0 +1,67 @@
+$animation-duration: 3s; 
+
+.loader_bg {
+  position: fixed;
+  z-index: 999999;
+  background: #FFF;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  border: 0 solid transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+  animation: loader $animation-duration linear infinite;
+}
+
+.loader:before, .loader:after {
+  content: '';
+  border: 1em solid $pink-color;
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader-scale $animation-duration linear infinite, loader-opacity 1s $animation-duration infinite;
+  opacity: 0;
+}
+
+.loader:before {
+  animation-delay: .2s;
+}
+
+@keyframes loader {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes loader-scale {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes loader-opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+  
