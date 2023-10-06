@@ -102,7 +102,7 @@
   
   
   /****** Foncionnements ***********/
-  .Fonctionnement {
+  .Article {
     padding: 20px;
     margin-bottom: 48px;
 
@@ -114,6 +114,15 @@
       padding-left: 12px;
     }  
   }
+  .Article-title {
+    color: #000;
+    font-family: $font-roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 25px;
+     }
   
   
   
@@ -164,7 +173,7 @@
   }
 
   
-  .Fonc-title {
+  .restaurant-title {
     color: $black-color;
     font: 700 24px $font-roboto;
     margin: 28px 0 26px;

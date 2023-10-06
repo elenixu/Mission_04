@@ -113,28 +113,32 @@
       }
   
        /****** Foncionnements ***********/
-    .Fonctionnement {
+    .Article {
       padding: 20px;
       margin-bottom: 48px;
+      flex-direction: column;
+      justify-content: center;
+      display: flex;
+      padding-left: 200px;
+      padding-right: 200px;
   
       .Fonc-content {
+        gap: 25px;
+        padding-left: 12px;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 25px;
-        padding-left: 12px;
       }
-      
-    .Fonc-title {
-      color: #000;
-      font-family: $font-roboto;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      padding-bottom: 25px;
-        }
-      
+
+      .Article-title {
+        color: #000;
+        font-family: $font-roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-bottom: 25px;
+         }
     }
     
     
@@ -178,37 +182,12 @@
   
   
     /****** restaurants ***********/
-    .restaurants {
-      padding: 20px;
-      padding-bottom: 48px;
-      background-color: var(--background, $background-color);
-    }
-  
     
-     .Fonc-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 25px;
-        padding-left: 12px;
-      }
-      
-    .Fonc-title {
-      color: #000;
-      font-family: $font-roboto;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      padding-bottom: 25px;
-        }
-  
-  
-  
-  
+
+
     .restaurants-cards {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       flex-wrap: wrap;
       padding: 5px;
     }
@@ -240,7 +219,7 @@
   
    .card-content {
     position: relative;
-    width: 490px;
+    width: 381px;
     margin-bottom: 50px;
     background-color: $white-color;
     border-radius: 15px;
@@ -253,10 +232,15 @@
       display: flex;
       align-items: center;
     }
+
+    .card-info {
+      text-decoration: none; 
+    }
   
     .card-texts {
       display: flex;
       justify-content: space-between;
+       
     }
   
     .card-title {
@@ -287,6 +271,11 @@
       }
   
     }
+  
+  
+  
+  
+  
   
     /****** footer ***********/
     .footer-mobile {
